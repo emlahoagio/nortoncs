@@ -1,0 +1,204 @@
+/* Reset link styles */
+a {
+    text-decoration: none;
+}
+
+/* Navbar Active Link */
+.navbar-nav .nav-link.active {
+    font-weight: bold;
+    color: #ffc107 !important;
+    border-bottom: 2px solid #ffc107;
+}
+
+/* Wallpaper */
+.wallpaper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+    padding: 0 20px;
+}
+
+.wallpaper img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Title */
+.title {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 48px;
+}
+
+.title h1 {
+    color: #f5af10;
+    font-weight: 700;
+    font-size: 48px;
+    border: 2px dashed #f5af10;
+    padding: 12px 24px;
+    border-radius: 5px;
+}
+
+/* Product Section */
+.section-arrival {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: auto;
+    flex-wrap: wrap;
+}
+
+.product-item {
+    display: flex;
+    flex-direction: column;
+    max-width: 250px;
+    align-items: center;
+    margin-bottom: 24px;
+}
+
+.product-title {
+    color: #777777;
+}
+
+.product-name {
+    font-weight: 600;
+    font-size: 20px;
+}
+
+/* Quick Link Section */
+.h1-background {
+    background: linear-gradient(to right, blue, purple);
+    padding: 80px 0;
+    display: flex;
+    justify-content: center;
+}
+
+.quick-link-container h1 {
+    color: #fff;
+    margin: 0;
+}
+
+.quick-link-container ol {
+    max-width: 1200px;
+    margin: auto;
+    margin-top: 32px;
+}
+
+.quick-link-container li {
+    margin: 12px;
+    font-size: 18px;
+}
+
+.more-info {
+    max-width: 1200px;
+    margin: auto;
+    margin-top: 32px;
+    margin-bottom: 32px;
+    font-size: 18px;
+}
+
+/* Call Now Button (Fixed on Mobile) */
+.call-now-btn {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-color: #f5af10;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 12px 20px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    text-decoration: none;
+    z-index: 1000;
+    display: none;
+    /* Ẩn trên desktop */
+}
+
+.call-now-btn:visited,
+.call-now-btn:active,
+.call-now-btn:focus {
+    color: white !important;
+    background-color: #f5af10 !important;
+    text-decoration: none !important;
+}
+
+/* Direct Call Button (Under Wallpaper) */
+.btn-direct-call {
+    display: block;
+    width: 100%;
+    max-width: 500px;
+    margin: 20px auto;
+    background-color: #f5af10;
+    color: white;
+    font-size: 22px;
+    font-weight: bold;
+    padding: 18px 30px;
+    border-radius: 50px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+}
+
+.btn-direct-call:hover,
+.btn-direct-call:focus,
+.btn-direct-call:active {
+    background-color: #ff9800;
+    color: white;
+    text-decoration: none;
+}
+
+/* Responsive Styles */
+@media (max-width: 1024px) {
+    .section-arrival {
+        justify-content: center;
+    }
+
+    .product-item {
+        max-width: 45%;
+    }
+
+    .wallpaper {
+        padding: 0 10px;
+    }
+}
+
+@media (max-width: 768px) {
+    .section-arrival {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .product-item {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 576px) {
+    .wallpaper {
+        padding: 0;
+    }
+
+    .title h1 {
+        font-size: 24px;
+        padding: 10px 20px;
+    }
+
+    .call-now-btn {
+        display: block;
+    }
+
+    footer {
+        margin-bottom: 40px;
+    }
+
+    .btn-direct-call {
+        max-width: 90%;
+        padding: 20px;
+        font-size: 20px;
+    }
+}
